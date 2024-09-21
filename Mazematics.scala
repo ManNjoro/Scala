@@ -2,11 +2,11 @@ import scala.io.StdIn.readInt
 object Mazematics {
     def main(args: Array[String]): Unit = {
         println("Hello")
-         // Prompt user for width
         // rectangle()
         // triangle()
         // circle()
-        cylinder()
+        // cylinder()
+        squarePrism()
     }
 
     def rectangle() = {
@@ -52,6 +52,15 @@ object Mazematics {
         val volume = PI * Math.pow(r, 2) * h
         val perimeter = PI * 2 * r
         println(s"r: $r\nh: $h\npi: $PI\nvolume: $volume\nxsarea: $xsarea\nrectarea: $rectarea\ntotalSA: $totalSA")
+    }
+
+    def squarePrism() = {
+        println("Enter the length:")
+        val l = readInt()
+        val xsarea = l*l
+        val totalSA = xsarea * 6
+        val volume = xsarea * l
+        println(s"l: $l\nvolume: $volume\nxsarea: $xsarea\ntotalSA: $totalSA")
     }
     
 }
