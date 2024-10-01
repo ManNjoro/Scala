@@ -7,13 +7,10 @@ object SumOfAnyInt {
     def sumOfInt(args: Array[String]): Int = {
         var sum: Int = 0; var i: Int = 0;
         for(arg <- args) {
-            try {
                 val num: Int = arg.toInt
+                println(s"arg[$i] = $num")
                 sum += num
                 i += 1
-            } catch {
-                case _ => println(s"Invalid input: $arg")
-            }
         }
         return sum
     }
