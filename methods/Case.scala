@@ -19,7 +19,7 @@ object Case extends App {
     StMarks("Mary", "F", 6, 9, 30)
     )
 
-    stMarks.foreach(m=>println(m.name+"\t"+sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam))+"\t"+grade(sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam)))))
+    stMarks.foreach(m=>println(m.name+"\t"+sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt)+"\t"+grade(sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt))))
 
     val stMarksSet = Set(
     StMarks("Faith", "F", 9, 11, 33),
@@ -35,7 +35,7 @@ object Case extends App {
     )
 
     println("---Set of Students---")
-    stMarksSet.foreach(m=>println(m.name+"\t"+sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam))+"\t"+grade(sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam)))))
+    stMarksSet.foreach(m=>println(m.name+"\t"+sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt)+"\t"+grade(sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt))))
 
     val stMarksSeq = Seq(
     StMarks("Faith", "F", 9, 11, 33),
@@ -51,7 +51,7 @@ object Case extends App {
     )
 
     println("---Seq of Students---")
-    stMarksSeq.foreach(m=>println(m.name+"\t"+sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam))+"\t"+grade(sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam)))))
+    stMarksSeq.foreach(m=>println(m.name+"\t"+sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt)+"\t"+grade(sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt))))
 
     val stMarksMap = Map(
     1 -> StMarks("Faith", "F", 9, 11, 33),
@@ -67,6 +67,6 @@ object Case extends App {
     )
 
     println("---Map of Students---")
-    stMarksMap.values.foreach(m=>println(m.name+"\t"+sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam))+"\t"+grade(sum(Integer.valueOf(m.cat1),Integer.valueOf(m.cat2),Integer.valueOf(m.exam)))))
+    stMarksMap.values.foreach(m=>println(m.name+"\t"+sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt)+"\t"+grade(sum(m.cat1.toInt,m.cat2.toInt,m.exam.toInt))))
 
 }
