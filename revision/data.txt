@@ -1,0 +1,3 @@
+Scala amekua wapi!!!. This a is a great platform for Java/Scala Developers.
+I will make sure I have a blog on Scala. Can I list down all the favorites in
+scala?What areas do I need to work on
