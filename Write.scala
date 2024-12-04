@@ -7,5 +7,5 @@ object Write extends App {
     writer.write("Did you code today?\n")
     writer.write("Ama You decided to rest?\n")
     writer.close()
-    Source.fromFile("Write.txt").foreach(println)
+    Source.fromFile("Write.txt").foreach(print)
 }
